@@ -7,9 +7,9 @@ import { ComponentService } from './componentService';
     selector: 'my-app',
     template: `<h1 *ngFor="let name of names">{{ name }}</h1>`,
     directives: [NgFor],
-    providers: [ComponentService, HTTP_PROVIDERS]
+    providers: [ComponentService]
 })
-export class AppComponent {
+export class ListComponent {
     public names: string[];
 
     constructor(service: ComponentService) {
